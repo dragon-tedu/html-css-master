@@ -1,0 +1,15 @@
+mixin tourCard(image,price,title,start,viewPoint,durationCount)
+  .tours
+    .tour-top
+      img.tour-images(src=image alt='thailand')
+      span.tour-price From $#{price}
+    .tour-content
+      h2.tour-title=title 
+      .tour-rating
+        .tour-review
+          .tour-start
+            img(src='./images/start.png' alt='tour-rating')
+          .tour-review-count
+            span #{start} ( #{viewPoint} reviews)
+        span.tour-duration Duration: #{durationCount} hours
+      a.tour-button(href='#' target='_blank' rel='noopener noreferrer') Tours Price $61

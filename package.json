@@ -10,5 +10,13 @@
   },
   "devDependencies": {
     "vite": "^4.2.0"
+  },
+  "main": "main.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }

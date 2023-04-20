@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background-color: #d3d6df;
+}
+
+.tours {
+    width: 370px;
+    /* height: 420px; */
+    height: auto;
+    background-color: #FFFFFF;
+    padding: 0px 0px 14px;
+}
+
+.tour-content {
+    padding: 20px 20px 14px;
+}
+
+.tour-title {
+    color: #23262F;
+    font-weight: 500;
+    font-size: 18px; 
+    margin-bottom: 10px;
+    /* line-height: 28px; */
+    line-height: 1.556;
+}
+
+.tour-rating {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tour-review-count .tour-rating {
+    color: #353945;
+}
+
+.tour-button {
+    font-size: 14px;
+    font-weight: 500;
+    color: #F4F5F6;
+    padding: 9px 17px;
+    background-color: #3B71FE;
+    border-radius: 8px;
+    text-decoration: none;
+    line-height: 17px;
+}
