@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background-color: #d3d6df;
+}
+
+:root {
+    --color-primary: #3B71FE;
+    --color-gray2: #4F4F4F;
+    --color-gray6: #F4F5F6;
+    --color-gray3: #777E90;
+    --gap: 29px;
+    --columns: 4;
+    --spacing: calc((var(--columns) - 1) / var(--columns) * var(--gap))
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.popular-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.popular-item {
+    width: calc(100% / var(--columns) - var(--spacing));
+    background-color: #FFFFFF;
+    box-shadow: 0px 12px 64px rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+}
+
+.popular-image {
+    height: 185px;
+    position: relative;
+}
+
+.popular-overlay {
+    background: linear-gradient(4.14deg, rgba(4, 4, 4, 0.52) 9.67%, rgba(4, 4, 4, 0) 71.31%);
+    position: absolute;
+    left: 0%;
+    right: -0.37%;
+    top: 0%;
+    bottom: 5.61%;
+    /* inset:0 */
+    border-radius: 14px 14px 0 0;
+}
+
+.popular-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 14px 14px 0 0;
+}
+
+.popular-label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-gray6);
+    font-size: 12px;
+    line-height: 15px;
+    padding: 4px 18px;
+    border-radius: 30px;
+    position: absolute;
+    right: 7.41%;
+    bottom: 0%;
+    transform: translateY(50%);
+}
+
+.popular-time {
+    display: inline-block;
+    color: var(--color-gray3);
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+}
+
+.popular-content {
+    margin: 11px 20px;
+}
+
+.popular-title {
+    display: block;
+    margin-top: 8.5px;
+    margin-bottom: 9.5px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.popular-review {
+    display: flex;
+    align-items: center;
+    color: var(--color-gray2);
+    font-size: 12px;
+    line-height: 175%;
+    column-gap: 10.61px;
+}
+
+@media screen and (max-width: 1023.98px) {
+    .popular-item {
+        --columns: 2;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .popular-item {
+        --columns: 1;
+    }
+}
